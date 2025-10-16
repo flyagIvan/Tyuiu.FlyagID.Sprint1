@@ -7,7 +7,8 @@ namespace Tyuiu.FlyagID.Sprint1.Task4.V15.Lib
     {
         public double Calculate(double x, double y)
         {
-            return (x + Math.Pow(y, 2)) / Math.Exp(2 - 4 * y);
+            double result = (x + Math.Pow(y, 2)) / Math.Exp(2 - 4 * y);
+            return Math.Round(result, 3);
         }
     }
 }
